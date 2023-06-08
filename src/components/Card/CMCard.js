@@ -41,6 +41,7 @@ const CMCard = ({ data }) => {
           }
         />
       </CMButtonWrapper>
+
       <CMCardFooter date={data?.dateUpdated} />
     </CMCardWrapper>
   );
