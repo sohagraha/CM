@@ -1,33 +1,34 @@
 import React from "react";
+import "./CMSearch.scss";
+import { debounce } from "lodash";
 
 const CMSearch = ({ sampleData, setData }) => {
+  const filterData = (value) => {
+    console.log("searching");
+    setData(
+      sampleData.filter((data) =>
+        data.name.toLowerCase().includes(value.toLowerCase())
+      )
+    );
+  };
+
+  const searchFunc = debounce((value) => {
+    filterData(value);
+  }, 500);
+
   return (
-    <div className="">
+    <div className="searchContainer">
       <input
         type="text"
-        className=""
+        className="searchInput"
         placeholder="Search Here"
         onChange={
           // Add onChange event handler here
           (e) => {
-            setData(
-              sampleData.filter((data) =>
-                data.name.toLowerCase().includes(e.target.value.toLowerCase())
-              )
-            );
+            searchFunc(e.target.value);
           }
         }
       />
-      <button
-        className=""
-        type="button"
-        id=""
-        onClick={() => {
-          setData(sampleData.filter((data) => data.name === "Test Manual"));
-        }}
-      >
-        Search
-      </button>
     </div>
   );
 };
