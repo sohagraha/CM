@@ -8,7 +8,7 @@ import CMButton from "../../common/component/Buttons/Button/CMButton";
 const CMCard = ({ data }) => {
   return (
     <CMCardWrapper>
-      <CMCardHeader header={data?.header} />
+      <CMCardHeader header={data?.originType} />
       <div className="card-body">
         <h2>{data.name}</h2>
         <p>{data.description}</p>

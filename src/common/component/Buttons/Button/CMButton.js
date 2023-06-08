@@ -5,7 +5,7 @@ const CMButton = ({ text, type, onClick }) => {
     case "primary":
       return (
         <div>
-          <button className="" onClick={onClick}>
+          <button className={type} onClick={onClick}>
             {text}
           </button>
         </div>
@@ -13,7 +13,7 @@ const CMButton = ({ text, type, onClick }) => {
     default:
       return (
         <div>
-          <button className="" onClick={onClick}>
+          <button className={type} onClick={onClick}>
             {text}
           </button>
         </div>
