@@ -1,0 +1,18 @@
+@import "../../styles/variables.scss";
+
+.cardBody {
+    .title {
+        font-weight: bold;
+        font-size: 18px;
+        display: block;
+        margin: 4px 0px;
+        color: $card-title-text;
+    }
+
+    .intents {
+        font-size: 14px;
+        display: block;
+        margin-bottom: 5px;
+        color: $card-subtext;
+    }
+}

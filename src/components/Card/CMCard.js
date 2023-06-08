@@ -5,15 +5,20 @@ import CMCardFooter from "../../common/component/Cards/CardFooter.js/CMCardFoote
 import CMButtonWrapper from "../../common/component/Buttons/CMButtonWrapper";
 import CMButton from "../../common/component/Buttons/Button/CMButton";
 
+import "./CMCard.scss";
+
 const CMCard = ({ data }) => {
   return (
     <CMCardWrapper>
       <CMCardHeader header={data?.originType} />
-      <div className="card-body">
-        <h2>{data.name}</h2>
-        <p>{data.description}</p>
-        <p>{data.price}</p>
+
+      <div className="cardBody">
+        <div>
+          <span className="title">{data?.name}</span>
+        </div>
+        <span className="intents">{data?.intents} Intents</span>
       </div>
+
       <CMButtonWrapper>
         <CMButton
           text="View"
