@@ -1,9 +1,9 @@
 import React from "react";
-import CMCardWrapper from "../../common/component/Cards/CMCardWrapper";
-import CMCardHeader from "../../common/component/Cards/CardHeader/CMCardHeader";
-import CMCardFooter from "../../common/component/Cards/CardFooter.js/CMCardFooter";
-import CMButtonWrapper from "../../common/component/Buttons/CMButtonWrapper";
 import CMButton from "../../common/component/Buttons/Button/CMButton";
+import CMButtonWrapper from "../../common/component/Buttons/CMButtonWrapper";
+import CMCardWrapper from "../../common/component/Cards/CMCardWrapper";
+import CMCardFooter from "../../common/component/Cards/CardFooter.js/CMCardFooter";
+import CMCardHeader from "../../common/component/Cards/CardHeader/CMCardHeader";
 
 import "./CMCard.scss";
 
@@ -22,7 +22,7 @@ const CMCard = ({ data }) => {
       <CMButtonWrapper>
         <CMButton
           text="View"
-          type={"viewBtn"}
+          type={"View"}
           onClick={
             // Add onClick event handler here
             () => {
@@ -32,7 +32,7 @@ const CMCard = ({ data }) => {
         />
         <CMButton
           text="Remove"
-          type={"removeBtn"}
+          type={"Remove"}
           onClick={
             // Add onClick event handler here
             () => {

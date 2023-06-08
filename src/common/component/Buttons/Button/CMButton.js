@@ -1,24 +1,15 @@
 import React from "react";
+import "./CMButton.scss";
 
 const CMButton = ({ text, type, onClick }) => {
-  switch (type) {
-    case "primary":
-      return (
-        <div>
-          <button className={type} onClick={onClick}>
-            {text}
-          </button>
-        </div>
-      );
-    default:
-      return (
-        <div>
-          <button className={type} onClick={onClick}>
-            {text}
-          </button>
-        </div>
-      );
-  }
+  return (
+    <div
+      className={`button ${type === "Remove" ? "removeBtn" : "viewBtn"}`}
+      onClick={onClick}
+    >
+      <p>{text}</p>
+    </div>
+  );
 };
 
 export default CMButton;

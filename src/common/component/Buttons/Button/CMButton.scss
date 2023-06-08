@@ -1,5 +1,28 @@
-.primary {
-    border-radius: 29px;
+@import "../../../../styles/variables.scss";
+
+.button {
+    border-radius: 30px;
     width: 85px;
     height: 25px;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+    font-weight: 600;
+
+    p {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 12px;
+    }
+}
+
+.removeBtn {
+    border: 2px solid $remove-btn-color;
+    color: $remove-btn-color;
+}
+
+.viewBtn {
+    border: 2px solid $view-btn-color;
+    color: $view-btn-color;
 }

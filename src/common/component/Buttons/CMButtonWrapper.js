@@ -1,7 +1,8 @@
 import React from "react";
+import "./CMButtonWrapper.scss";
 
 const CMButtonWrapper = (props) => {
-  return <div className="CMButtonWrapper">{props.children}</div>;
+  return <div className="cmButtonWrapper">{props.children}</div>;
 };
 
 export default CMButtonWrapper;
