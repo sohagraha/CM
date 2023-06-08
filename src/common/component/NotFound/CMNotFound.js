@@ -1,9 +1,10 @@
 import React from "react";
+import "./CMNotFound.scss";
 
 const CMNotFound = () => {
   return (
-    <div>
-      <p>No Data Found :(</p>
+    <div className="notFoundContainer">
+      <h3>No Data Found :(</h3>
     </div>
   );
 };

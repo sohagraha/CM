@@ -1,3 +1,5 @@
+@import "../../styles/variables.scss";
+
 .searchContainer {
     margin-top: 35px;
     max-width: 725px;
@@ -7,7 +9,7 @@
 
     .searchInput {
         padding: 8px 12px;
-        border: 1px solid #ccc;
+        border: 1.5px solid $view-btn-color;
         border-radius: 5px;
         font-size: 16px;
         width: 100%;
